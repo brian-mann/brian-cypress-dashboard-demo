@@ -1,9 +1,7 @@
 
 version: 2.1
 orbs:
-  # not specifying a version installs the latest version.
-  # specify a version of the orb with: cypress-io/cypress@x.x.x
-  cypress: cypress-io/cypress
+  cypress: cypress-io/cypress@1 # installs the latest version of our cypress 1.x.x orb
 workflows:
   build:
     jobs:
