@@ -15,7 +15,7 @@ describe('cypress docs', () => {
     })
   })
 
-  context.only('mobile', () => {
+  context('mobile', () => {
     beforeEach(() => {
       cy.visit('https://docs.cypress.io')
     })
