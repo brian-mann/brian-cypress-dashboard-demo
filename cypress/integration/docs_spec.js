@@ -9,6 +9,10 @@ describe('cypress docs', () => {
       .get('#mobile-nav-toggle')
       .should('not.be.visible')
     })
+
+    it('fails finding some element', () => {
+      cy.contains('something that does not exist in text')
+    })
   })
 
   context.only('mobile', () => {
